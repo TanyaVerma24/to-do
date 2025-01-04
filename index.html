@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex@latest/primeflex.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>to-do List</title>
+  </head>
+  <body>
+    <div class="to-do">
+      <div class="container">
+        <h1 class="mt-4">
+          <i>
+            <span class="heading">To-Do</span> <span class="app-clr"> App</span>
+          </i>
+        </h1>
+        <div class="inpt-cont text align-items-center flex gap-2">
+          <input type="text" id="input" placeholder="enter your to-dos" />
+          <select class="drop-down mt-4" name="type" id="type">
+            <option value="" disabled selected>Type</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+          </select>
+          <i id="add-btn" class="plus-icon fa-solid fa-plus"></i>
+          <div class="mt-4"><button id="clear">clear to-dos</button></div>
+        </div>
+        <div class="flex gap-3 mt-3">
+          <span class="circle pink"></span
+          ><span class="mt-1" style="color: rgb(255, 0, 119); font-size: 20px">Work</span>
+          <span class="circle blue"></span
+          ><span class="mt-1" style="color: rgb(0, 4, 247); font-size: 20px"
+            >Personal</span
+          >
+        </div>
+        <div class="task">
+          <ul id="u-list" class="flex flex-column">
+            <!-- <li id="list">buying a new laptop</li>
+            <li id="list">buying a new cycle</li> -->
+          </ul>
+          <div class="result mt-4">
+            You have no pending task, Please add some task.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
